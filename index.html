@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Collection Sample</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="http://backbonejs.org/backbone-min.js"></script>
+
+    <script type="text/javascript">
+		var app = {};
+		var app.employee = Backbone.Model.extend({
+			defaults: {
+				name: '',
+				employeeID: ''
+			}
+		});
+		
+		var app.team = Backbone.Collections.extend ({
+			model: app.employee;
+		});
+		
+		var emp1 = new Employee
+		
+		//Views
+		
+		var views = {};
+		views.EmployeeList = Backbone.View.extend ({
+			
+		});
+		
+	</script>
+  </head>
+  <body>
+    <h1>Collection Sample</h1>
+
+     <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Employee ID</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </body>
+</html>
